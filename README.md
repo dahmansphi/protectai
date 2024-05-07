@@ -221,12 +221,15 @@ and
 Observe that the prediction tasks which we hit 100% for both classes is now at the same level of accuracy for __normal images__, _however_ it is almost __0%__ for the other class of __pneumonia images__. that means if a person actually has cancer the model says they are not; as presented in the figures below. 
 
 __result of updated model accuracy__
+
 ![prediction by attacked model](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/predict_attack_2.png)
 
 __result of prediction on pneumonia classes__
+
 ![prediction by model for normal imgs](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/predict_1.png)
 
 __result of prediction on pneumonia classes__
+
 ![results by attacked model](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/predict_2_attacked_pnemonia.png)
 
 
