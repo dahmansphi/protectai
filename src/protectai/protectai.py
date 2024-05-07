@@ -127,7 +127,7 @@ class ProtectAI:
             if _count < 150:
               print("*", end='')
             else:
-              print("*", end='\n')
+              print("*", end='\r')
               _count = 0
 
             _img_full_path = os.path.join(_class_folder_path, img)
@@ -373,7 +373,7 @@ class ProtectAI:
             if _counter < 100:
               print("*", end='')
             else:
-              print("*", end='\n')
+              print("*", end='\r')
               _counter = 0
 
             _counter += 1

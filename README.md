@@ -58,9 +58,7 @@ Unintended outputs	Does the model behave unexpectedly and produce unintended res
 4. __Breaches or other security events__: Has the organization experienced an attack or security event that could indicate they are an active target and/or that could have created a pathway for adversaries to access and manipulate training data?
 5. __Unusual employee activity__: Does an employee show an unusual interest in understanding the intricacies of the training data and/or the security measures employed to protect it?
 
-The following __gif__ illustrates the kind of data poisoning attack on __AI Model__. It basically shows how the __alphas or weights__ are influenced by the new training samples which the model uses __to update itself__.
-
-![training_ai_model](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/ai_attack_simulation.gif) 
+This [gif](https://github.com/dahmansphi/attackai/blob/main/assets/ai_attack_simulation.gif) illustrates the kind of data poisoning attack on __AI Model__. It basically shows how the __alphas or weights__ are influenced by the new training samples which the model uses __to update itself__.
 
 
 To this end, such matters must be considered by the company AI division once they decide to employ the __AI problem-solving paradigm__.   
@@ -142,7 +140,7 @@ Author-email: dahmansphi@gmail.com
 ## Employ the protectai -**Conditions**
 
 > [!IMPORTANT]
-> It’s mandatory, to use the first edition of protectai, to make sure the __update__ folder that have the subfolders of the __normal and Pneumonia__ as illustrated in the [gif](https://github.com/dahmansphi/attackai?tab=readme-ov-file#installation) above. 
+> It’s mandatory, to use the first edition of protectai, to make sure the __update__ folder that have the subfolders of the __normal and Pneumonia__ as illustrated in the [gif](https://github.com/dahmansphi/attackai?tab=readme-ov-file#installation). 
 
 ## Detour in the protectai package- Build-in
 Once your installation is done, and you have met all the conditions, then you may want to check 
@@ -156,7 +154,7 @@ inst = ProtectAI()
 now this **inst** instance offers you access to those build in functions that you need. 
 this is a screenshot:
 
-![Screenshot of build-in functions of the protectai tool.](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/functions_paim)
+![Screenshot of build-in functions of the protectai tool.](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/functions_paim.png)
 
 Once you have __protectai instance__, here are the details of the right sequence to employ the __defence__:
 
@@ -171,17 +169,18 @@ the function takes __one argument__ that is the path to the __training and testi
 ![Screenshot of attack one with stamp.](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/set_path_model.png)
 
 ### make model function:
-This function as the name implies, is to create the __AI predictive model__.  This model will is a __neural network__ model that accept __binary type of classess__ 
+This function as the name implies, is to create the skelaton __AI predictive model__.  This is a __neural network__ model that accept __binary type of classess__ 
 
 ```inst.make_model()```
 
 ### train and test the model
-In the standard workflow to create a neural network we use __training__ samples to train the model and eventually the model would have its set of __ratios/weights__. However, we should test that trained model. To this end, this function `train_test_model()` does this functionality. It requires two arguments, the first is the __skeleton of the neural network model__ created in previous [function](#make-model-function), and the second is a __list of paths to the training and testing folders__. 
+In the standard workflow to create a neural network we use __training__ samples to train the model and eventually the model would have its set of __ratios/weights__. However, we should test that trained model. To this end, this function `train_test_model()` does that. It requires two arguments, the first is the __skeleton of the neural network model__ created in previous [function](#make-model-function), and the second is a __list of paths to the training and testing folders__. 
 
 ```inst.train_test_model(model, paths)```
 
 The result of the training and testing can be seen in the figure below:
-[train test results](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/train_test.png)
+
+![train test results](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/train_test.png)
 
 Once the result is fine and satisfactory then you can move and create the original model.
 
