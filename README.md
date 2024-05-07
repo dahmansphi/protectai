@@ -224,7 +224,7 @@ __result of updated model accuracy__
 
 ![prediction by attacked model](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/predict_attack_2.png)
 
-__result of prediction on pneumonia classes__
+__result of prediction on normal classes__
 
 ![prediction by model for normal imgs](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/predict_1.png)
 
@@ -236,11 +236,11 @@ __result of prediction on pneumonia classes__
 > [!CAUTION]
 > You can see the effect of such an attack how misleading it is. This is a sample illustration that we can see its effect after one round, however such idea could go unpredicted for some time by poisoning the model slowly until it loses its main core of ratios.
 
-## Secure layer using the __culture norm__ solution
+## Secure layer using the __norm culture__ solution
 
 As I have discussed earlier in the simulative storyline example, if the AI team decided to add a security layer before the actual update happens. This is where I do introduce the __norm culture__ solution. The __mathematical__ intuition behind the method can be found in the academic published paper, however in this demonstration I will show how such layer could help to capture the images of which they have been attacked by either type one or two.   
 
-[norm cuture logo](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/norm_culture.png)
+![norm cuture logo](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/norm_culture.png)
 
 In the following figure you can see where the location of this __norm culture__ box. It will be basically the stage where you can check if the __folder of the new training images__ are compromised in anyway. To employ the __norm culture box__ we shall be using `inst.protect_me()` function which in principle calculate four main elements:
 1. __two numpy__ where each represents the number of classes called __alpha__
@@ -249,7 +249,7 @@ In the following figure you can see where the location of this __norm culture__ 
 
 the figure illustrate that:
 
-[norm images](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/norms_imgs.png)
+![norm images](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/norms_imgs.png)
 
 the following functions illustrates the implementation with two arguments __the path of the original clean training dataset__ and __path to where save the three elements__:
 
