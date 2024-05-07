@@ -11,7 +11,7 @@ long_description = (here / "README.md").read_text(encoding="utf-8")
 setup(
 
     name="protectai",  # Required
-    version="0.0.0",  # Required
+    version="1.0.0",  # Required
     
     description="Simulation of protecting AI model from poisoning attack",  # Optional
     long_description=long_description,  # Optional
