@@ -282,7 +282,7 @@ This function as the name implies is to inspect the new batch of images if they 
 
 here is figure shows the result with inspecting the folder of which that had been attacked prviously.
 
-[type one attack caught by inpsect](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/type_two_image_result.png)
+![type one attack caught by inpsect](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/type_two_image_result.png)
 
 
 ## Conclusion on installation and employing 
