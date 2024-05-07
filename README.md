@@ -211,9 +211,13 @@ I have discussed in detail the workflow of updating the existing model in the [p
 ### Effect of poisoning attack 
 
 Assume either type of attacks has happened as discussed in [types of attack](https://github.com/dahmansphi/attackai?tab=readme-ov-file#type-one-attack). We could see the effect of that attack on the accuracy of the model using:
+
 ```inst.update_trained_model_produce(model=paths_to_existing_model, paths=paths_new_imgs)``` 
+
 and
+
 ```inst.predict(img_path=path_to_imgs, model_path=orignial_model)```
+
 Observe that the prediction tasks which we hit 100% for both classes is now at the same level of accuracy for __normal images__, _however_ it is almost __0%__ for the other class of __pneumonia images__. that means if a person actually has cancer the model says they are not; as presented in the figures below. 
 
 __result of updated model accuracy__
