@@ -196,10 +196,10 @@ Since the model is ready, it is time now to see the model in action. There is th
 
 ```inst.predict(img_path=path_to_imgs, model_path=orignial_model)```
 
-if we just for testing purpose point the model to folder of __normal imgages__ we could see the results as in the figure below with accuracy of 100%, and if we the same for __Pneumonia images__ we could also see almost 100%.
+if we, just for testing purpose, point the model to folder of __normal imgages__ we could see the results as in the figure below with accuracy of 100%, and the same for the __Pneumonia images__ we could also see almost 100%.
 
-[prediction by model for normal imgs](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/predict_1.png)
-[prediction by model for pneumonia imgs](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/predict_1_pnemonia.png)
+![prediction by model for normal imgs](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/predict_1.png)
+![prediction by model for pneumonia imgs](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/predict_1_pnemonia.png)
 
 ### Model Update Framework
 
