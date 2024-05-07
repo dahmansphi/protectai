@@ -188,7 +188,7 @@ Once these results from the __train and test__ are satisfactory then you can use
 
 ```inst.produce_model(model=model, paths_folder=paths_produce)```
 
-[original model](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/orginal_model.png)
+![original model](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/orginal_model.png)
 
 ### Prediction Task
 
