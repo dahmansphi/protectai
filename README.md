@@ -256,7 +256,13 @@ the following functions illustrates the implementation with two arguments __the 
 ```inst.protect_me(paths=paths, save_path_norms=save_folder)```
 
 
-Here are the use in sequece two functions `inst.inspect_attack_one()`, and `inst.inspect_attack_two()`. 
+Here are the use in sequece two functions 
+
+`inst.inspect_attack_one()`
+
+, and 
+
+`inst.inspect_attack_two()`. 
 
 ### inspect_attack_one()
 This function as the name implies is to inspect the new batch of images if they are compromised in anyway with the __first type of attack__. it takes __two arguments__ the first one is the __path to inspect__ and the second is the path to the model __norms__ which is discussed above. 
@@ -266,8 +272,8 @@ the requrecruitment of this function using the function:
 
 here is figure shows the result with inspecting the folder of which that had been attacked prviously.
 
-[type one attack caught by inpsect](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/catch_type_one_1.png)
-[type one attack caught by inpsect](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/catch_type_one_2.png)
+![type one attack caught by inpsect](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/catch_type_one_1.png)
+![type one attack caught by inpsect](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/catch_type_one_2.png)
 
 ### inspect_attack_two()
 This function as the name implies is to inspect the new batch of images if they are compromised in anyway with the __second type of attack__. two important arguments, __first argument is path to the folder that need to be inspected__, and the second __path to original predictive model that has been proved to be clean orginally__. the requrecruitment of this function using the function:
