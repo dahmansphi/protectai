@@ -179,8 +179,7 @@ In the standard workflow to create a neural network we use __training__ samples 
 ```inst.train_test_model(model, paths)```
 
 The result of the training and testing can be seen in the figure below:
-
-![train test results](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/train_test.png)
+![Screenshot train test model.](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/train_test.png)
 
 Once the result is fine and satisfactory then you can move and create the original model.
 
