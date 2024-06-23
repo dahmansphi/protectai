@@ -238,7 +238,7 @@ __result of prediction on pneumonia classes__
 
 ## Secure layer using the __norm culture__ solution
 
-As I have discussed earlier in the simulative storyline example, if the AI team decided to add a security layer before the actual update happens. This is where I do introduce the __norm culture__ solution. The __mathematical__ intuition behind the method can be found in the academic published paper, however in this demonstration I will show how such layer could help to capture the images of which they have been attacked by either type one or two.   
+As I have discussed earlier in the simulative storyline example, if the AI team decided to add a security layer before the actual update happens. This is where I do introduce the __norm culture__ solution. The __mathematical__ intuition behind the method can be found in the academic [published paper](https://www.scienceopen.com/hosted-document?doi=10.14293/PR2199.000907.v1), however in this demonstration I will show how such layer could help to capture the images of which they have been attacked by either type one or two.   
 
 ![norm cuture logo](https://raw.githubusercontent.com/dahmansphi/protectai/main/assets/norm_culture.png)
 
@@ -291,5 +291,5 @@ I hope this simulation shows the idea of such attack, its effect and a proposal 
 
 # Reference
 
-please follow up on the project page to find the academic published paper on the project
+please follow up on the [publications](https://dahmansphi.com/publications/) on the website to find the academic [published paper](https://www.scienceopen.com/hosted-document?doi=10.14293/PR2199.000907.v1)
  
