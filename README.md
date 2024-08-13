@@ -130,7 +130,7 @@ The result then shall be as:
 
 ```
 Name: protectai
-Version: 1.0.2
+Version: 1.0.3
 Summary: Simulation of protecting AI model from poisoning attack
 Home-page: https://github.com/dahmansphi/protectai
 Author: Dr. Deniz Dahman's

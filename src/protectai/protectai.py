@@ -25,6 +25,7 @@ import time
 import math
 import numpy as np
 from PIL import Image
+import keras
 from keras.utils import to_categorical
 from keras.models import Sequential
 from keras.layers import Conv2D
