@@ -178,7 +178,8 @@ class ProtectAI:
     '''This function create the model skeleton, using standard 180 Resl.'''
 
     model = Sequential()
-    model.add(Conv2D(32, (3, 3), activation='relu', kernel_initializer='he_uniform', padding='same', input_shape=(180, 180, 1)))
+    model.add(keras.Input(shape=(180, 180, 1)))
+    model.add(Conv2D(32, (3, 3), activation='relu', kernel_initializer='he_uniform', padding='same'))
     model.add(MaxPooling2D((2, 2)))
     model.add(Conv2D(64, (3, 3), activation='relu', kernel_initializer='he_uniform', padding='same'))
     model.add(MaxPooling2D((2, 2)))
@@ -208,7 +209,8 @@ class ProtectAI:
     test_it = test_datagen.flow_from_directory(testPath, color_mode="grayscale", class_mode='binary', batch_size=64, target_size=(180, 180))
 
     # fit and test model
-    history = model.fit(train_it, steps_per_epoch=len(train_it), validation_data=test_it, validation_steps=len(test_it), epochs=10, verbose=1)
+    # history = model.fit(train_it, steps_per_epoch=len(train_it), validation_data=test_it, validation_steps=len(test_it), epochs=10, verbose=1)
+    history = model.fit(train_it, validation_data=test_it, epochs=10, verbose=1)
 
     # evaluate model
     _, acc = model.evaluate(test_it, steps=len(test_it), verbose=0)
@@ -225,7 +227,8 @@ class ProtectAI:
     # prepare iterators
     train_it = train_datagen.flow_from_directory(trainPath, color_mode="grayscale", class_mode='binary', batch_size=64, target_size=(180, 180))
     # fit model
-    history = model.fit(train_it, steps_per_epoch=len(train_it), epochs=10, verbose=0)
+    # history = model.fit(train_it, steps_per_epoch=len(train_it), epochs=10, verbose=0)
+    history = model.fit(train_it, epochs=10, verbose=0)
     # save the model
 
     time_stamp = str(int(time.time()))
